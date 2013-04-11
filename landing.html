@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Spotistic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/flat-ui.css" rel="stylesheet">
+    <link href="assets/css/landing.css" rel="stylesheet">
+    <style>
+      body {
+        padding-bottom: 40px;
+        color: #5a5a5a;
+      }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="navbar navbar-static-top">
+          <div class="navbar-inner">
+            <div class="container">
+            <!-- <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> -->
+              <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+              <a class="brand" href="landing.html"><img src="assets/img/spotistic-logo-mini2.png"></a>
+              <div class="nav-collapse collapse">
+                <ul class="nav pull-right">
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#about">Pricing</a></li>
+                  <li><a href="#contact">Contact Us</a></li>
+                  <li><a href="#signupModal" role="button" class="btn btn-sign signup" data-toggle="modal">SIGN UP</a></li>
+                  <li><a href="#" class="btn btn-sign signin">SIGN IN</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <nav>
+        <div class="navbar navbar-static-top">
+          <div class="navbar-inner custom">
+            <div class="container-fluid">
+              <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+              <a class="brand tagline">Intelligence on the SPOT
+              <p>join 4000 other venues already using <strong>Spotistic</strong></p></a>
+              <ul class="nav pull-right">
+                <li><a href="#signupModal" role="button" class="btn btn-signlrg signlrg" data-toggle="modal">SIGN UP TODAY</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div id="content">
+        <div id="myCarousel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="item active">
+              <img class="background" src="assets/img/examples/splash2.png" alt="">
+              <div class="container">
+                <div class="carousel-caption pull-left">
+                  <h1>Real-time Analytics</h1>
+                  <p class="lead">for all your venues</p>
+                  <div class="stats">
+                    <div class="statbox">
+                      <div class="row">
+                        <div class="span2">
+                          <h1>63</h1>
+                        </div>
+                        <div class="span4 info">
+                          <h3>AVG Score of all tracked venues</h3>
+                          <p><a href="#">What's your score?</a>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="span2">
+                          <h2>435283</h2>
+                        </div>
+                        <div class="span3 info">
+                          <h3>TOTAL CHECKINS</h3>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="span2">
+                          <h2>28977</h2>
+                        </div>
+                        <div class="span3 info">
+                          <h3>TOTAL REVIEWS</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-image pull-right">
+                  <a href="#"><img class="align-right" src="assets/img/venue_metrics.png"></a>
+                  <a class="btn btn-large btn-info" href="#">SEE OUR LIVE DASHBOARD</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="signupModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+            <h3 id="signupModalWindow">Sign up for Spotistic</h3>
+          </div>
+          <div class="modal-body">
+            <a href="#"><img id="first" src="assets/img/facebook_connect.png"></a></br>
+            <a href="#"><img id="second" src="assets/img/foursquare_connect.png"></a>
+            <p>or</p>
+            <input type="text" value placeholder="Email Address" class="span4">
+            <input type="text" value placeholder="Password" class="span4">
+            <input type="text" value placeholder="Password Confirmation" class="span4">
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary custom">SIGN UP</button>
+          </div>
+        </div>
+
+        <div class="feature-color2">
+          <div class="container marketing">
+            <h2 class="featurette-heading alt center">Now tracking</h2>
+            <div class="featurette center">
+              <a href="#"><img class="featurette-image logo" src="assets/img/logos/mickeys.png"></a>
+              <a href="#"><img class="featurette-image logo" src="assets/img/logos/starbucks.png"></a>
+              <a href="#"><img class="featurette-image logo" src="assets/img/logos/vw.png"></a>
+              <a href="#"><img class="featurette-image logo" src="assets/img/logos/allianz.png"></a>
+              <a href="#"><img class="featurette-image" src="assets/img/logos/db.png"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="features">
+          <div class="container marketing">
+            <div class="row">
+              <div class="span4">
+                <img class="img-circle" data-src="holder.js/140x140">
+                <h2>Vital Statistics</h2>
+                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p><a class="btn" href="#">View details &raquo;</a></p>
+              </div><!-- /.span4 -->
+              <div class="span4">
+                <img class="img-circle" data-src="holder.js/140x140">
+                <h2>Actionable Data</h2>
+                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p><a class="btn" href="#">View details &raquo;</a></p>
+              </div><!-- /.span4 -->
+              <div class="span4">
+                <img class="img-circle" data-src="holder.js/140x140">
+                <h2>All-in-One Dashboard</h2>
+                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p><a class="btn" href="#">View details &raquo;</a></p>
+              </div><!-- /.span4 -->
+            </div><!-- /.row -->
+          </div>
+        </div>
+
+          <div class="feature-color1">
+            <div class="container marketing">
+                <h2 class="featurette-heading comp">Competitor Insights</h2>
+                <p>and direct comparisons</p>
+              <div class="featurette center">
+                <img class="featurette-image" src="assets/img/comp_chart.png">
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-color2">
+            <div class="container marketing">
+              <h2 class="featurette-heading alt center">Platforms monitored</h2>
+              <div class="featurette center alt">
+                <a href="#"><img class="featurette-image logo alt" src="assets/img/logos/facebook.png"></a>
+                <a href="#"><img class="featurette-image logo alt" src="assets/img/logos/foursquare.png"></a>
+                <a href="#"><img class="featurette-image" src="assets/img/logos/google+.png"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-color3">
+            <div class="container marketing">
+              <h2 class="featurette-heading alt center">Featured on</h2>
+              <div class="featurette center alt2">
+                <a href="#"><img class="featurette-image logo alt2" src="assets/img/logos/silicon_allee.png"></a>
+                <a href="#"><img class="featurette-image logo alt2" src="assets/img/logos/venture_village.png"></a>
+                <a href="#"><img class="featurette-image logo alt2" src="assets/img/logos/hotel_newsroom.png"></a>
+                <a href="#"><img class="featurette-image logo alt2" src="assets/img/logos/go_square.png"></a>
+                <a href="#"><img class="featurette-image" src="assets/img/logos/numrush.png"></a>
+              </div>
+              <hr class="featurette-divider">
+            </div>
+          </div>
+
+          <!-- FOOTER -->
+            <footer>
+              <div class="container">
+                <p class="pull-right"><a href="#">Back to top</a></p>
+                <p>&copy; 2013 Spotistic &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+              </div>
+            </footer>
+
+        <!-- </div> -->
+      </div><!-- CONTENT -->
+    </div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/jquery-1.9.1.js"></script>
+    <script src="assets/js/jquery.dropkick-1.0.0.js"></script>
+    <script src="assets/js/jquery.tagsinput.js"></script>
+    <script src="assets/js/jquery.placeholder.js"></script>
+    <script src="assets/js/custom_checkbox_and_radio.js"></script>
+    <script src="assets/js/custom_radio.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+        var aboveHeight = $('header').height();
+
+        $(window).scroll(function(){
+          if ($(window).scrollTop() > aboveHeight){
+            $('nav').addClass('fixed').css('top', '0').next().css('padding-top','91px');
+          } else {
+            $('nav').removeClass('fixed').next().css('padding-top','0');
+          }
+        });
+      });
+    </script>
+    <script src="assets/js/holder/holder.js"></script>
+  </body>
+</html>

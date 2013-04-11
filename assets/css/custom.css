@@ -1,0 +1,176 @@
+body {
+  background: #E9E9E9; /* url('/img/bg_grain_200x200.png');*/
+}
+
+textarea {
+  resize: none;
+}
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none;
+}
+
+.accordion-group, .table {
+  background: #FFF;
+  border-color: #AAA;
+}
+
+#Reviews .accordion {
+  border-radius: 4px;
+  border: 0 solid #AAA;
+  border-width: 1px 1px 0 1px;
+  overflow: hidden;
+}
+
+#Reviews .accordion-group {
+  border-radius: 0;
+  margin-bottom: 0;
+  border: none;
+  border-bottom: 1px solid #AAA;
+}
+
+.accordion-toggle {
+  cursor: auto;
+}
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none;
+}
+
+.engage-user {
+  border-radius: 3px;
+  margin: 5px;
+  background-color: #FFF;
+}
+
+.engage-user:hover {
+  background-color: rgba(220, 220, 220, 0.3);
+}
+
+.container-review {
+  padding-left: 0px;
+  padding: 10px;
+  position: relative;
+}
+.review-quote {
+  margin-bottom: 0;
+}
+.sentiment {
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.report-review {
+  display: none;
+  font-size: 0.8em;
+}
+
+.review-quote:hover .report-review {
+  display: inline;
+}
+
+.container-checkin {
+  padding: 0;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.checkin-quote {
+  margin-bottom: 0;
+}
+
+.reply {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+}
+
+.actions {
+  font-size: 0.8em;
+}
+.actions a {
+  color: black;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.highlight {
+  background-color: #FFFFDD;
+}
+
+.white {
+  background-color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.white.alt {
+  padding-left: 30px;
+}
+
+.white.fixed-height {
+  height: 270px;
+  overflow: auto;
+}
+
+.white.fixed-height2 {
+  height: 240px;
+}
+
+.white.fixed-height3 {
+  height: 225px;
+}
+
+.white.venue-breakdown {
+  padding-top: 30px;
+}
+
+.indicator.fixed-height {
+  padding-top: 15px;
+  height: 95px;
+}
+
+.indicator.selected {
+  color: white;
+  background-color: #73c1ec;
+}
+
+.indicator.a:link {
+  color: black;
+}
+
+a.indicator:hover,
+a.indicator:focus {
+  border-color: #0088cc;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+     -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+          box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+}
+
+.indicator > img {
+  display: block;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.indicator .caption {
+  padding: 9px;
+  color: #555555;
+}
+
+.pill-wrapper {
+  margin-bottom: 10px;
+}
+

@@ -1,0 +1,545 @@
+
+/* NAV
+-------------------------------------------------- */
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.container,
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+  width: 979px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  max-width: 979px;
+  margin: 0 auto;
+}
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  margin-top: 0;
+  margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+}
+
+/* Remove border and change up box shadow for more contrast */
+.navbar .navbar-inner {
+  border: 0;
+  -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+     -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+          box-shadow: 0 2px 10px rgba(0,0,0,.25);
+}
+
+.navbar .nav > li > a.signup {
+  color: white;
+  text-shadow: none;
+  margin-right: 10px;
+  background-color: #2ECC71;
+}
+
+.navbar .nav > li > a:focus.signup,
+.navbar .nav > li > a:hover.signup {
+  color: #1abc9c;
+  text-decoration: none;
+  background-color: #ECF0F1;
+}
+
+.navbar .nav > li > a:active.signup {
+  background-color: #cccccc;
+}
+
+.navbar .nav > li > a.signin {
+  color: white;
+  text-shadow: none;
+  background-color: #2C3E50;
+}
+
+.navbar .nav > li > a:focus.signin,
+.navbar .nav > li > a:hover.signin {
+  color: #1abc9c;;
+  text-decoration: none;
+  background-color: #ECF0F1;
+}
+
+.navbar .nav > li > a:active.signin {
+  background-color: #cccccc;
+}
+
+.navbar .nav > li > a.signlrg {
+  color: white;
+  text-shadow: none;
+  padding-top: 15px;
+  background-color: #27AE60;
+}
+
+.navbar .nav > li > a:focus.signlrg,
+.navbar .nav > li > a:hover.signlrg {
+  color: #1abc9c;
+  text-decoration: none;
+  background-color: #ECF0F1;
+}
+
+.navbar .nav > li > a:active.signlrg {
+  background-color: #cccccc;
+}
+
+.navbar .brand {
+  margin-top: 5px;
+  margin-bottom: -5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+}
+
+.navbar-inner.custom {
+  background-color: #34495E;
+  background-image: none;
+}
+
+/* Offset the responsive button for proper vertical alignment */
+.navbar .btn-navbar {
+  margin-top: 10px;
+}
+
+.nav-collapse {
+  font-size: .9em;
+  margin-top: 5px;
+}
+
+#content {
+  height: 1500px;
+}
+
+/* BUTTONS
+-------------------------------------------------- */
+
+.btn-primary.custom {
+  color: white;
+  text-shadow: none;
+  background-color: #2ECC71;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+  color: #1abc9c;
+  text-decoration: none;
+  background-color: #ECF0F1;
+}
+
+.btn.btn-primary:active,
+.btn.btn-primary.active {
+  background-color: #cccccc;
+}
+
+.btn.btn-sign {
+  font-size: .9em;
+  line-height: 0px;
+  margin-top: 9px;
+}
+
+.btn.btn-signlrg {
+  line-height: 7px;
+  border: 1px solid black;
+  margin-top: 25px;
+}
+
+.btn.btn-dash {
+  background-color: #7F8C8D;
+}
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 0;
+}
+
+.carousel .container {
+  position: relative;
+  z-index: 9;
+}
+
+.carousel-control {
+  height: 80px;
+  margin-top: 0;
+  font-size: 120px;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+  background-color: transparent;
+  border: 0;
+  z-index: 10;
+}
+
+.carousel .item {
+  height: 500px;
+}
+.carousel img.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+.carousel-caption {
+  background-color: transparent;
+  position: static;
+  max-width: 550px;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.carousel-caption h1 {
+  font-size: 3em;
+  margin: 0;
+  line-height: 1.25;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+
+.carousel-caption .lead {
+  font-size: 2em;
+  margin-bottom: 15px;
+  line-height: 1.25;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+
+.carousel-caption .btn {
+  margin-top: 10px;
+}
+
+.carousel-image {
+  text-align: center;
+  margin-top: 95px;
+  max-width: 400px;
+}
+
+.carousel-image img {
+  opacity: 0.65;
+  margin-bottom: 35px;
+}
+
+/* MODAL WINDOW
+-------------------------------------------------- */
+#signupModal {
+  top: 175px;
+  width: 500px;
+}
+
+.modal-header {
+  background-color: #d9d9d9;
+  *border: 1px solid #999;
+  -webkit-border-radius: 6px 6px 0 0;
+     -moz-border-radius: 6px 6px 0 0;
+          border-radius: 6px 6px 0 0;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+#first {
+  margin: 15px 0 25px 0;
+}
+
+#second {
+  margin-bottom: 10px;
+}
+
+.modal-body p {
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.modal-backdrop {
+  background-color: #1f2730;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+.statbox {
+/*  background-color: #9eb3b7;
+  opacity: 0.25;*/
+  margin: 25px 0 10px 0;
+  padding: 0 0 5px 10px;
+  border: 7px solid white;
+  border-radius: 8px;
+}
+
+.statbox h1 {
+  color: #8dd2ff;
+  font-size: 5.5em;
+  text-align: center;
+}
+
+.statbox h2 {
+  color: #55FF55;
+  font-size: 3em;
+  text-align: center;
+}
+
+.span4.info {
+  padding: 10px 0 15px 0;
+  margin: 0 0 0 20px;
+}
+
+.span3.info {
+  padding: 10px 0 15px 0;
+  margin: 0 0 0 20px;
+}
+
+.span4.info h3 {
+  color: white;
+  font-size: 1.3em;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+
+.span3.info h3 {
+  color: white;
+  font-size: 1.3em;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+
+
+.span4.info a:link {
+  font-size: 1.3em;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+/* Center align the text within the three columns below the carousel */
+.marketing .span4 {
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .span4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 0 0 45px 0; /* Space out the Bootstrap <hr> more */
+}
+
+.featurette {
+  padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+  overflow: hidden; /* Vertically center images part 2: clear their floats. */
+  padding-bottom: 35px;
+  margin: auto;
+}
+
+.featurette.comp {
+  margin-bottom: 50px;
+}
+
+.featurette.alt {
+  padding-top: 80px;
+}
+
+.featurette.alt2 {
+  padding-top: 115px;
+}
+
+.featurette-image {
+  margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
+
+.featurette-image.logo {
+  margin-right: 30px;
+}
+
+.featurette-image.logo.alt {
+  margin-right: 130px;
+}
+
+.featurette-image.logo.alt2 {
+  margin-right: 10px;
+}
+
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+.featurette-image.pull-left {
+  margin-right: 40px;
+}
+.featurette-image.pull-right {
+  margin-left: 40px;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.featurette-heading.comp {
+  font-size: 3.2em;
+  font-weight: bold;
+  padding-top: 50px;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+
+.featurette-heading.alt {
+  font-size: 1.8em;
+  font-weight: 200;
+  margin: 25px 0 25px 0;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+
+.features {
+  margin: 60px 0 60px 0;
+}
+
+.feature-color1 {
+  background-color: #E5FFD9;
+}
+
+.feature-color1 p {
+  font-size: 2em;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.feature-color2 {
+  background-color: #F4F4F4;
+}
+
+.feature-color3 {
+
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 1200px) {
+  .span4 {
+    width: 300px;
+  }
+}
+
+@media (max-width: 979px) {
+
+  .container.navbar-wrapper {
+    margin-bottom: 0;
+    width: auto;
+  }
+  .navbar-inner {
+    border-radius: 0;
+    margin: 0 ;
+  }
+
+  .carousel .item {
+    height: 500px;
+  }
+
+  .marketing .span4 {
+    text-align: center;
+  }
+
+  .featurette {
+    height: auto;
+    margin-left: 10;
+  }
+  .featurette-image.pull-left,
+  .featurette-image.pull-right {
+    display: block;
+    float: none;
+    max-width: 40%;
+    margin: 0 auto 20px;
+  }
+}
+
+@media (max-width: 767px) {
+
+/*  .navbar-inner {
+    margin: -20px;
+  }*/
+
+  .carousel {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .carousel .item {
+    height: 300px;
+  }
+  .carousel img {
+    height: 300px;
+  }
+  .carousel-caption {
+    width: 65%;
+    padding: 0 70px;
+    margin-top: 100px;
+  }
+  .carousel-caption h1 {
+    font-size: 30px;
+  }
+  .carousel-caption .lead,
+  .carousel-caption .btn {
+    font-size: 18px;
+  }
+
+  .marketing .span4 + .span4 {
+    margin-top: 40px;
+  }
+
+  .featurette-heading {
+    font-size: 30px;
+  }
+  .featurette .lead {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+}
+
+/* MISC
+------------------------- */
+hr {
+  border-top: 2px solid #3b4344;
+  border-bottom: 2px solid #ffffff;
+}
+.center {
+  text-align: center;
+}
+
+footer {
+  padding: 15px 0 8px 0;
+  background-color: #3b4344;
+}
+
+.brand.tagline {
+  color: white;
+  font-size: 1.4em;
+  text-shadow: none;
+  text-decoration: none;
+}
+
+.brand.tagline > p {
+  font-weight: 200;
+  color: #BDC3C7;
+  font-size: 0.65em;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
