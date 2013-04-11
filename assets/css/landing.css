@@ -315,8 +315,15 @@
   text-decoration: none;
   letter-spacing: 1px;
 }
+
+.marketing .span4.custom {
+  margin-left: 0;
+  margin-right: 48px;
+}
+
 /* Center align the text within the three columns below the carousel */
 .marketing .span4 {
+  margin-left: 0;
   text-align: center;
 }
 .marketing h2 {
@@ -435,6 +442,18 @@
 
 @media (max-width: 979px) {
 
+  .span2 {
+    width: 140px;
+  }
+
+  .span3 {
+    width: 220px;
+  }
+
+  .span4 {
+    width: 280px;
+  }
+
   .container.navbar-wrapper {
     margin-bottom: 0;
     width: auto;
@@ -448,8 +467,17 @@
     height: 500px;
   }
 
+  .marketing .row {
+    margin-left: 0;
+  }
+
+  .marketing .span4.custom {
+    margin-left: 0;
+    margin-right: 35px;
+  }
+
   .marketing .span4 {
-    text-align: center;
+    margin-left: 0;
   }
 
   .featurette {
