@@ -123,6 +123,7 @@
 .btn-primary.custom {
   color: white;
   text-shadow: none;
+  padding: 6px 14px 6px 14px;
   background-color: #2ECC71;
 }
 
@@ -182,7 +183,7 @@
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 500px;
+  height: 550px;
 }
 
 .carousel-caption {
@@ -265,11 +266,8 @@
 -------------------------------------------------- */
 
 .statbox {
-/*  background-color: #9eb3b7;
-  opacity: 0.25;*/
   margin: 25px 0 10px 0;
   padding: 0 0 5px 10px;
-  border: 7px solid white;
   border-radius: 8px;
 }
 
@@ -285,13 +283,26 @@
   text-align: center;
 }
 
+.statbox hr {
+  width: 92%;
+  text-align: center;
+  border-top: none;
+  opacity: .45;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.statbox hr.alt {
+  margin-top: 9px;
+}
+
 .span4.info {
-  padding: 10px 0 15px 0;
+  padding: 10px 0 15px 15px;
   margin: 0 0 0 20px;
 }
 
 .span3.info {
-  padding: 10px 0 15px 0;
+  padding: 10px 0 15px 15px;
   margin: 0 0 0 20px;
 }
 
@@ -299,6 +310,13 @@
   color: white;
   font-size: 1.3em;
   margin-bottom: 0;
+  letter-spacing: 5px;
+}
+
+.span4.info a:link {
+  font-size: 1.3em;
+  font-weight: bold;
+  text-decoration: none;
   letter-spacing: 1px;
 }
 
@@ -306,14 +324,7 @@
   color: white;
   font-size: 1.3em;
   margin-bottom: 0;
-  letter-spacing: 1px;
-}
-
-
-.span4.info a:link {
-  font-size: 1.3em;
-  text-decoration: none;
-  letter-spacing: 1px;
+  letter-spacing: 5px;
 }
 
 .marketing .span4.custom {
@@ -426,8 +437,19 @@
   background-color: #F4F4F4;
 }
 
-.feature-color3 {
+#feature1 {
+  margin-top: 55px;
+  margin-bottom: 15px;
+}
 
+#feature2 {
+  margin-top: 3px;
+  margin-bottom: 12px;
+}
+
+#feature3 {
+  margin-top: 50px;
+  margin-bottom: 16px;
 }
 
 
@@ -484,6 +506,11 @@
     height: auto;
     margin-left: 10;
   }
+
+  .featurette-image.logo {
+    margin-right: 15px;
+  }
+
   .featurette-image.pull-left,
   .featurette-image.pull-right {
     display: block;
@@ -549,6 +576,11 @@ hr {
 footer {
   padding: 15px 0 8px 0;
   background-color: #3b4344;
+}
+
+footer a:link {
+  font-weight: 400;
+  text-decoration: none;
 }
 
 .brand.tagline {
