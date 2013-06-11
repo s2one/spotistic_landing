@@ -26,10 +26,9 @@
   right: 0;
   z-index: 10;
   margin-top: 0;
-  margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+  margin-bottom: -90px;
 }
 
-/* Remove border and change up box shadow for more contrast */
 .navbar .navbar-inner {
   border: 0;
   -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
@@ -92,9 +91,10 @@
 
 .navbar .brand {
   margin-top: 5px;
-  margin-bottom: -5px;
+  margin-bottom: -10px;
   font-size: 16px;
   font-weight: bold;
+  z-index: 1030;
   text-shadow: 0 -1px 0 rgba(0,0,0,.5);
 }
 
@@ -103,14 +103,24 @@
   background-image: none;
 }
 
-/* Offset the responsive button for proper vertical alignment */
+.navbar-inner.custom a:link,
+.navbar-inner.custom a:visited {
+  color: white;
+  text-shadow: 0 1px 1px rgba(0,0,0,.8);
+}
+
+.navbar-inner.custom img {
+  margin-top: -2px;
+  margin-right: 10px;
+}
+
 .navbar .btn-navbar {
   margin-top: 10px;
 }
 
 .nav-collapse {
   font-size: .9em;
-  margin-top: 5px;
+  margin-top: 22px;
 }
 
 #content {
@@ -148,14 +158,16 @@
 .btn.btn-signlrg {
   line-height: 7px;
   border: 1px solid black;
-  margin-top: 25px;
+  margin-left: 10px;
+  margin-bottom: 25px;
 }
 
 .btn.btn-dash {
   background-color: #7F8C8D;
 }
 
-/* Carousel base class */
+/* CAROUSEL
+-------------------------------------------------- */
 .carousel {
   margin-bottom: 0;
 }
@@ -183,14 +195,16 @@
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 550px;
+  height: 600px;
 }
 
 .carousel-caption {
   background-color: transparent;
   position: static;
   max-width: 550px;
-  padding: 0 20px;
+  padding: 0;
+/*  padding: 0 0 0 20px;
+  margin-left: -20px;*/
   margin-top: 50px;
 }
 
@@ -216,7 +230,7 @@
 
 .carousel-image {
   text-align: center;
-  margin-top: 95px;
+  margin-top: 135px;
   max-width: 400px;
 }
 
@@ -229,7 +243,12 @@
 -------------------------------------------------- */
 #signupModal {
   top: 175px;
-  width: 500px;
+  width: 450px;
+}
+
+#callModal {
+  top: 175px;
+  width: 450px;
 }
 
 .modal-header {
@@ -242,6 +261,11 @@
 
 .modal-body {
   text-align: center;
+}
+
+.modal-body .span2 {
+  margin-top: 5px;
+  margin-left: 140px;
 }
 
 #first {
@@ -262,6 +286,15 @@
   background-color: #1f2730;
 }
 
+.select-icon {
+  background: #1abc9c url("../img/select/toggle.png") no-repeat right center;
+}
+
+.radio .icon,
+.radio .icon-to-fade {
+  background-image: url("../img/radio.png");
+}
+
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -272,15 +305,17 @@
 }
 
 .statbox h1 {
-  color: #8dd2ff;
+  color: #2ECC71;
   font-size: 5.5em;
   text-align: center;
+  text-shadow: 0 1px 1px rgba(0,0,0,.6);
 }
 
 .statbox h2 {
-  color: #55FF55;
+  color: #b1e0ff;
   font-size: 3em;
   text-align: center;
+  text-shadow: 0 1px 1px rgba(0,0,0,.8);
 }
 
 .statbox hr {
@@ -294,6 +329,10 @@
 
 .statbox hr.alt {
   margin-top: 9px;
+}
+
+.statbox .row.last {
+  padding-bottom: 35px;
 }
 
 .span4.info {
@@ -311,6 +350,7 @@
   font-size: 1.3em;
   margin-bottom: 0;
   letter-spacing: 5px;
+  text-shadow: 0 1px 1px rgba(0,0,0,.8);
 }
 
 .span4.info a:link {
@@ -318,6 +358,7 @@
   font-weight: bold;
   text-decoration: none;
   letter-spacing: 1px;
+  text-shadow: 0 1px 1px rgba(0,0,0,.6);
 }
 
 .span3.info h3 {
@@ -325,6 +366,7 @@
   font-size: 1.3em;
   margin-bottom: 0;
   letter-spacing: 5px;
+  text-shadow: 0 1px 1px rgba(0,0,0,.8);
 }
 
 .marketing .span4.custom {
@@ -332,7 +374,6 @@
   margin-right: 48px;
 }
 
-/* Center align the text within the three columns below the carousel */
 .marketing .span4 {
   margin-left: 0;
   text-align: center;
@@ -350,12 +391,12 @@
 ------------------------- */
 
 .featurette-divider {
-  margin: 0 0 45px 0; /* Space out the Bootstrap <hr> more */
+  margin: 0 0 45px 0;
 }
 
 .featurette {
-  padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
-  overflow: hidden; /* Vertically center images part 2: clear their floats. */
+  padding-top: 120px;
+  overflow: hidden;
   padding-bottom: 35px;
   margin: auto;
 }
@@ -373,7 +414,7 @@
 }
 
 .featurette-image {
-  margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+  margin-top: -120px;
 }
 
 .featurette-image.logo {
@@ -388,7 +429,6 @@
   margin-right: 10px;
 }
 
-/* Give some space on the sides of the floated elements so text doesn't run right into it. */
 .featurette-image.pull-left {
   margin-right: 40px;
 }
@@ -396,7 +436,6 @@
   margin-left: 40px;
 }
 
-/* Thin out the marketing headings */
 .featurette-heading {
   font-size: 50px;
   font-weight: 300;
@@ -414,7 +453,7 @@
 .featurette-heading.alt {
   font-size: 1.8em;
   font-weight: 200;
-  margin: 25px 0 25px 0;
+  margin: 35px 0 35px 0;
   letter-spacing: 1px;
   text-shadow: 0 1px 1px rgba(0,0,0,.4);
 }
@@ -424,7 +463,7 @@
 }
 
 .feature-color1 {
-  background-color: #E5FFD9;
+  background-color: #feffe6;
 }
 
 .feature-color1 p {
@@ -437,8 +476,12 @@
   background-color: #F4F4F4;
 }
 
+.feature-color3 .featurette-divider {
+  margin-bottom: 20px;
+}
+
 #feature1 {
-  margin-top: 55px;
+  margin-top: 27px;
   margin-bottom: 15px;
 }
 
@@ -463,6 +506,10 @@
 }
 
 @media (max-width: 979px) {
+
+  body {
+    overflow-x: hidden;
+  }
 
   .span2 {
     width: 140px;
@@ -489,6 +536,10 @@
     height: 500px;
   }
 
+  .carousel-caption {
+    padding-left: 20px;
+  }
+
   .marketing .row {
     margin-left: 0;
   }
@@ -500,6 +551,11 @@
 
   .marketing .span4 {
     margin-left: 0;
+  }
+
+  #feature2 {
+    margin-top: 12px;
+    margin-bottom: 13px;
   }
 
   .featurette {
@@ -575,7 +631,7 @@ hr {
 
 footer {
   padding: 15px 0 8px 0;
-  background-color: #3b4344;
+  background-color: #34495E;
 }
 
 footer a:link {

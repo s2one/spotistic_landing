@@ -39,7 +39,7 @@
             <div class="container-fluid">
             <!-- <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> -->
               <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-              <a class="brand" href="landing.html"><img src="assets/img/spotistic-logo-mini2.png"></a>
+              <a class="brand" href="landing.html"><img src="assets/img/spotistic-logo-alt.png"></a>
               <div class="nav-collapse collapse">
                 <ul class="nav pull-right">
                   <li><a href="#">Blog</a></li>
@@ -60,12 +60,15 @@
             <div class="container-fluid">
               <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
               <a class="brand tagline">Intelligence on the SPOT
-              <p>join 4000 other venues already using <strong>Spotistic</strong></p></a>
-              <ul class="nav pull-right">
-                <li><a href="#signupModal" role="button" class="btn btn-signlrg signlrg" data-toggle="modal">SIGN UP TODAY</a></li>
-                  </ul>
-                </li>
-              </ul>
+              <p>join over 6000 venues already using <strong>Spotistic</strong></p></a>
+              <div class="nav-collapse collapse">
+                <ul class="nav pull-right">
+                  <li><a href="#callModal" data-toggle="modal"><img src="assets/img/glyphicons/white/139_phone.png">Call Me Back</a></li>
+                  <li><a href="#signupModal" role="button" class="btn btn-signlrg signlrg" data-toggle="modal">SIGN UP TODAY</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -79,7 +82,7 @@
               <div class="container">
                 <div class="carousel-caption pull-left">
                   <h1>Real-time Analytics</h1>
-                  <p class="lead">for all your venues</p>
+                  <p class="lead">for all our users</p>
                   <div class="stats">
                     <div class="statbox">
                       <div class="row">
@@ -91,7 +94,16 @@
                           <p><a href="#">What's your score?</a>
                         </div>
                       </div>
-                      <hr class="featurette-divider">
+                      <hr class="featurette-divider alt">
+                      <div class="row">
+                        <div class="span2">
+                          <h2>6783</h2>
+                        </div>
+                        <div class="span3 info">
+                          <h3>TOTAL VENUES</h3>
+                        </div>
+                      </div>
+                      <hr class="featurette-divider alt">
                       <div class="row">
                         <div class="span2">
                           <h2>435283</h2>
@@ -101,7 +113,7 @@
                         </div>
                       </div>
                       <hr class="featurette-divider alt">
-                      <div class="row">
+                      <div class="row last">
                         <div class="span2">
                           <h2>28977</h2>
                         </div>
@@ -139,15 +151,52 @@
           </div>
         </div>
 
+        <div id="callModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="callModalLabel" aria-hidden="true">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+            <h3 id="callModalWindow">Arrange a Callback</h3>
+          </div>
+          <div class="modal-body">
+            <input type="text" value placeholder="Name" class="span3"></br>
+            <input type="text" value placeholder="Phone Number" class="span3"></br>
+            <h4>When should we call you?</h4>
+            <div class="span2">
+              <label class="radio checked"><span class="icon"></span><span class="icon-to-fade"></span>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                Now
+              </label>
+              <label class="radio"><span class="icon"></span><span class="icon-to-fade"></span>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1">
+                in 15 minutes
+              </label>
+              <label class="radio"><span class="icon"></span><span class="icon-to-fade"></span>
+                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option1">
+                in 30 minutes
+              </label>
+              <label class="radio"><span class="icon"></span><span class="icon-to-fade"></span>
+                <input type="radio" name="optionsRadios" id="optionsRadios4" value="option1">
+                in 1 hour
+              </label>
+              <label class="radio"><span class="icon"></span><span class="icon-to-fade"></span>
+                <input type="radio" name="optionsRadios" id="optionsRadios5" value="option1">
+                Tomorrow
+              </label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary custom">CALL ME</button>
+          </div>
+        </div>
+
         <div class="feature-color2">
           <div class="container marketing">
             <h2 class="featurette-heading alt center">Now tracking</h2>
             <div class="featurette center">
-              <a href="#"><img class="featurette-image logo" src="assets/img/logos/mickeys.png"></a>
-              <a href="#"><img class="featurette-image logo" src="assets/img/logos/starbucks.png"></a>
-              <a href="#"><img class="featurette-image logo" src="assets/img/logos/vw.png"></a>
-              <a href="#"><img class="featurette-image logo" src="assets/img/logos/allianz.png"></a>
-              <a href="#"><img class="featurette-image" src="assets/img/logos/db.png"></a>
+              <a href="http://www.mcdonalds.com" target="_blank"><img class="featurette-image logo" src="assets/img/logos/mickeys.png"></a>
+              <a href="http://www.starbucks.com" target="_blank"><img class="featurette-image logo" src="assets/img/logos/starbucks.png"></a>
+              <a href="http://www.vw.com" target="_blank"><img class="featurette-image logo" src="assets/img/logos/vw.png"></a>
+              <a href="http://www.allianz.com" target="_blank"><img class="featurette-image logo" src="assets/img/logos/allianz.png"></a>
+              <a href="http://www.db.de" target="_blank"><img class="featurette-image" src="assets/img/logos/db.png"></a>
             </div>
           </div>
         </div>
@@ -158,19 +207,19 @@
               <div class="span4 custom">
                 <img id="feature1" src="assets/img/viewsy.png">
                 <h2>Vital Statistics</h2>
-                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p>To help you manage your presence across multiple social media platforms, Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus.</p>
                 <p><a class="btn" href="#">View details &raquo;</a></p>
               </div><!-- /.span4 -->
               <div class="span4 custom">
                 <img id="feature2" src="assets/img/todo.png">
                 <h2>Actionable Data</h2>
-                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p>To help you manage your presence across multiple social media platforms, Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus.</p>
                 <p><a class="btn" href="#">View details &raquo;</a></p>
               </div><!-- /.span4 -->
               <div class="span4">
                 <img id="feature3" src="assets/img/score.png">
                 <h2>Score Driven</h2>
-                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p>To help you manage your presence across multiple social media platforms, Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus.</p>
                 <p><a class="btn" href="#">View details &raquo;</a></p>
               </div><!-- /.span4 -->
             </div><!-- /.row -->
@@ -188,25 +237,30 @@
           </div>
 
           <div class="feature-color2">
-            <div class="container marketing">
+            <div class="container-fluid marketing">
               <h2 class="featurette-heading alt center">Platforms monitored</h2>
               <div class="featurette center alt">
-                <a href="#"><img class="featurette-image logo alt" src="assets/img/logos/facebook.png"></a>
-                <a href="#"><img class="featurette-image logo alt" src="assets/img/logos/foursquare.png"></a>
-                <a href="#"><img class="featurette-image" src="assets/img/logos/google+.png"></a>
+                <a href="http://wwww.facebook.com" target="_blank"><img class="featurette-image logo alt" src="assets/img/logos/facebook.png"></a>
+                <a href="http://www.foursquare.com" target="_blank"><img class="featurette-image logo alt" src="assets/img/logos/foursquare.png"></a>
+                <a href="http://www.plus.google.com" target="_blank"><img class="featurette-image" src="assets/img/logos/google+.png"></a>
               </div>
             </div>
           </div>
 
           <div class="feature-color3">
-            <div class="container marketing">
+            <div class="container-fluid marketing">
               <h2 class="featurette-heading alt center">Featured on</h2>
               <div class="featurette center alt2">
-                <a href="#"><img class="featurette-image logo alt2" src="assets/img/logos/silicon_allee.png"></a>
-                <a href="#"><img class="featurette-image logo alt2" src="assets/img/logos/venture_village.png"></a>
-                <a href="#"><img class="featurette-image logo alt2" src="assets/img/logos/hotel_newsroom.png"></a>
-                <a href="#"><img class="featurette-image logo alt2" src="assets/img/logos/go_square.png"></a>
-                <a href="#"><img class="featurette-image" src="assets/img/logos/numrush.png"></a>
+                <a href="http://siliconallee.com/events/2012/08/13/the-top-ten-teams-are-chosen-for-sbc-berlin" target="_blank">
+                  <img class="featurette-image logo alt2" src="assets/img/logos/silicon_allee.png"></a>
+                <a href="http://venturevillage.eu/let-the-pitch-begin-the-selection-days-for-startup-bootcamp-berlin" target="_blank">
+                  <img class="featurette-image logo alt2" src="assets/img/logos/venture_village.png"></a>
+                <a href="http://www.hotel-newsroom.de/local/foursquare-wird-zur-lokalen-suchmaschine/" target="_blank">
+                  <img class="featurette-image logo alt2" src="assets/img/logos/hotel_newsroom.png"></a>
+                <a href="http://www.gosquare.cz/2012/07/fourscan-podnikani-pod-dohledem/" target="_blank">
+                  <img class="featurette-image logo alt2" src="assets/img/logos/go_square.png"></a>
+                <a href="http://numrush.nl/2012/07/12/foursquare-tips-managen-via-fourscan/" target="_blank">
+                  <img class="featurette-image" src="assets/img/logos/numrush.png"></a>
               </div>
               <hr class="featurette-divider">
             </div>
@@ -247,9 +301,11 @@
 
         var aboveHeight = $('header').outerHeight();
 
+        console.log(aboveHeight);
+
         $(window).scroll(function(){
           if ($(window).scrollTop() > aboveHeight){
-            $('nav').addClass('fixed').css('top', '0').next().css('padding-top','91px');
+            $('nav').addClass('fixed').css('top', '0').next().css('padding-top','86px');
           } else {
             $('nav').removeClass('fixed').next().css('padding-top','0');
           }
